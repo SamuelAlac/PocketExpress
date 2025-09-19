@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".CreateItems">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBackToManageItem"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/back_icon" />
+
+        <TextView
+            android:id="@+id/lblTitleAddItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/josefin_slab_bold"
+            android:text="Add Item"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgAddItemImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            tools:srcCompat="@mipmap/ic_launcher" />
+
+        <EditText
+            android:id="@+id/txtAddItemName"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/input_design"
+            android:digits="qwertyuiopasdfghjklzxcvbnm
+                            QWERTYUIOPASDFGHJKLZXCVBNM "
+            android:ems="10"
+            android:hint="Name"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/txtAddItemDesc"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="7dp"
+            android:background="@drawable/input_design"
+            android:digits="1234567890%().,!qwertyuiopasdfghjklzxcvbnm
+                            QWERTYUIOPASDFGHJKLZXCVBNM "
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="text|textMultiLine"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/txtAddItemStock"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/input_design"
+            android:digits="1234567890"
+            android:ems="10"
+            android:hint="Stock"
+            android:inputType="number"
+            android:paddingStart="15dp" />
+
+        <EditText
+            android:id="@+id/txtAddItemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginVertical="7dp"
+            android:background="@drawable/input_design"
+            android:digits="1234567890."
+            android:ems="10"
+            android:hint="Price"
+            android:inputType="number"
+            android:paddingStart="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnCreateItem"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_button_design"
+            android:text="ADD ITEM" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
