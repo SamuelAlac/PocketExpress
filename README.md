@@ -3,7 +3,7 @@
 
 PocketExpress is a native Android application that functions as a straightforward Point of Sale (POS) and inventory management system. It's built entirely with Java and utilizes a local SQLite database to manage all data, making it a self-contained solution for small-scale retail operations without needing an internet connection.
 
-Download link: https://drive.google.com/drive/u/0/folders/16DOFnCdzdV8yEzICzs8w_LUf9RokLnxP
+**Download Link:** https://drive.google.com/drive/u/0/folders/16DOFnCdzdV8yEzICzs8w_LUf9RokLnxP
 
 ## Features
 
